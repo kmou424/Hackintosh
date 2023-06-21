@@ -78,6 +78,22 @@
                     <key>Path</key>
                     <string>SSDT-XHC1-DISABLE.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>Disable NVME Controller 1</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>SSDT-RP.PXSX-GPP1-DISABLE.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>Disable NVME Controller 2</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>SSDT-RP.PXSX-GPP6-DISABLE.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array/>
