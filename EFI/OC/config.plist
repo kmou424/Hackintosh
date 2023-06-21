@@ -72,11 +72,27 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-XHC1-DISABLE.aml</string>
+                    <string>Disable XHCI0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>SSDT-XHC0-DISABLE.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>Disable XHCI1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
                     <string>SSDT-XHC1-DISABLE.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>Disable XHCI2</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>SSDT-XHC2-DISABLE.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
