@@ -1,27 +1,27 @@
-# macOS on Lenovo Legion 5 pro (aka r9000p 2021H)
+# macOS on Lenovo Legion R9000P (also Legion 5 Pro)
 
 ## Table of Contents
 
-- [Specifications](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#specifications)
-- [macOS Compatibility](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#macos-update-history)
-- [What's working](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#whats-working)
-- [What's not working](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#whats-not-working)
-- [Instructions](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#instructions)
-- [Notes](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#notes)
-- [Kexts used](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#Kexts-used)
-- [SSDTs used](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#SSDTs-used)
-- [Credits](https://github.com/extremegrief1/Lenovo_Legion_5_Hackintosh#credits)
+- [Specifications](https://github.com/kmou424/Hackintosh#specifications)
+- [macOS Compatibility](https://github.com/kmou424/Hackintosh#macos-update-history)
+- [What's working](https://github.com/kmou424/Hackintosh#whats-working)
+- [What's not working](https://github.com/kmou424/Hackintosh#whats-not-working)
+- [Instructions](https://github.com/kmou424/Hackintosh#instructions)
+- [Notes](https://github.com/kmou424/Hackintosh#notes)
+- [Kexts used](https://github.com/kmou424/Hackintosh#Kexts-used)
+- [SSDTs used](https://github.com/kmou424/Hackintosh#SSDTs-used)
+- [Credits](https://github.com/kmou424/Hackintosh#credits)
 
 
 ## Specifications
 
 Type | Spec | Status
 :---------|:---------|:----------
-Model Name      | Lenovo Legion 5 pro | ✅
+Model Name      | Lenovo Legion R9000P | ✅
 CPU              | AMD Ryzen™ 7 5800H CPU | ✅
 iGPU | Vega 8 | ✅
-RAM           | 32 GB 3200 MHz DDR4 | ✅
-Wi-Fi             | Intel® Wi-Fi 6E AX210 | ✅
+RAM           | 16 GB 3200 MHz DDR4 | ✅
+Wi-Fi             | Intel® Wi-Fi 6E AX200 | ✅
 Ethernet          | Realtek RTL8111 | ✅
 Audio       | Realtek ALC287 | ✅
 
@@ -54,6 +54,10 @@ Sleep | PowerPlay panic on wake, still investigating | ⚠️
 ## Instructions
 
 ### Pre-Installation
+
+#### Disable NootedRed
+
+
 
 #### Disabling XHC1
 
@@ -88,6 +92,11 @@ After you're at the macOS desktop, running [@mikigal's script](https://github.co
 source <(curl -s https://raw.githubusercontent.com/mikigal/ryzen-hackintosh/master/Resources/ryzen_patch.sh)
 ```
 
+## Notes
+
+#### Increase Your Vram
+
+ 
 
 ## Kexts used
 
@@ -112,9 +121,9 @@ Kext | Info
 [VirtualSMC](https://github.com/acidanthera/VirtualSMC) | Advanced Apple SMC emulator in the kernel
 [VoodooPS2Controller](https://github.com/acidanthera/VoodooPS2) | PS/2 Keyboard support
 [NootedRed](https://github.com/NootInc/NootedRed) | iGPU patches
-  
+
 ## SSDTs Used
-  
+
 SSDT | Info
 :---------|:---------
 [SSDT-PLUG-ALT](/Extras/Decompiled%20ACPI%20Files/SSDT-CPUR.dsl) | Fixes CPU definitions.
@@ -131,4 +140,4 @@ SSDT | Info
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and most Kexts.
 - [yusufklncc](https://github.com/yusufklncc) for README template.
 - And anyone else that helped to develop and improve hackintoshing.
-- Legion 5 EFI from https://github.com/ExtremeXT/
+- Legion 5 EFI from https://github.com/JamisonMurphy/Legion5Pro_EFI
